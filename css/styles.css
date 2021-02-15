@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #66BFBF;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  /*font-size: 562.5%;
+  /*to get 90px dynamic size you have to divide by 16 because size 16 is 100% zoom on browser*/
+  /*90px dynamic is (90/16=5.625, which is 562.5%)*/
+  font-size: 5.625rem; /*1em is 16px font size, so then multiply 1em by 5.625 = 5.625em*/
+  /*using rem instead of em will make sure this tag selector is not affected by upstream size changes from outside this tag*/
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+  font-size: 2.5rem; /*40/16 = 2.5em*/
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*.myTitle {
+  color: #66BFBF;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-top: 0;
+}*/
+
+.top-container {
+  background-color: #E4F9F5;
+  padding-top: 100px;
+  position: relative;
+}
+
+/*.middle-container {
+
+}*/
+
+.music {
+  height: 200px;
+  width: 200px;
+}
+
+.html {
+  height: 200px;
+  width: 200px;
+}
+
+.profpic {
+  height: 200px;
+  width: 200px;
+}
+
+/*.bottom-container {
+
+}*/
+
+.pro {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
