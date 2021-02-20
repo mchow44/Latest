@@ -1,7 +1,9 @@
 body {
+  background-color: #E4F9F5;
+  color: #40514E;
+  font-family: 'Merriweather', serif;
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -11,28 +13,46 @@ h1 {
   /*font-size: 562.5%;
   /*to get 90px dynamic size you have to divide by 16 because size 16 is 100% zoom on browser*/
   /*90px dynamic is (90/16=5.625, which is 562.5%)*/
-  font-size: 5.625rem; /*1em is 16px font size, so then multiply 1em by 5.625 = 5.625em*/
+  font-size: 5.625rem;
+  /*1em is 16px font size, so then multiply 1em by 5.625 = 5.625em*/
   /*using rem instead of em will make sure this tag selector is not affected by upstream size changes from outside this tag*/
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
   color: #66BFBF;
-  font-size: 2.5rem; /*40/16 = 2.5em*/
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  /*40/16 = 2.5em*/
   font-weight: normal;
-  margin-top: 0;
+  padding-bottom: 10px;
 }
 
 h3 {
+  color: #11999E;
   font-family: 'Montserrat', sans-serif;
 }
 
-/*.myTitle {
-  color: #66BFBF;
-  font-size: 2.5rem;
-  font-weight: normal;
-  margin-top: 0;
-}*/
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  margin: 100px auto;
+  width: 4%;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
 
 .top-container {
   background-color: #E4F9F5;
@@ -40,18 +60,62 @@ h3 {
   position: relative;
 }
 
-/*.middle-container {
-
-}*/
-
-.music {
-  height: 200px;
-  width: 200px;
+.middle-container {
+  margin: 100px 0;
+  /*100px added to top and bottom of .middle-container div, where the left and right margins are 0*/
 }
 
-.html {
-  height: 200px;
-  width: 200px;
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px; /*50px top, 0 on right and left, 20px on bottom*/
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.skill-row {
+  margin: 100px auto 100px auto;
+  text-align: left;
+  /*overrides the "text-align: center" from the "body" tag selector above*/
+  width: 50%;
+}
+
+.music-img {
+  float: right;
+  margin-left: 30px;
+  width: 25%;
+}
+
+.html-img {
+  float: left;
+  /* makes image float left, so that the paragraph can wrap to this on the right*/
+  margin-right: 30px;
+  /*gives 30px margin space to the right of image*/
+  width: 25%;
 }
 
 .profpic {
@@ -59,22 +123,43 @@ h3 {
   width: 200px;
 }
 
-/*.bottom-container {
-
+/*.pro {
+  text-decoration: underline;
 }*/
 
-.pro {
-  text-decoration: underline;
+.skill-bio {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+.intro {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin: auto;
+  width: 30%;
+}
+
+.contact-message {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin: 40px auto 60px;
+  width: 40%;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
 }
 
 .top-cloud {
   position: absolute;
   right: 300px;
-  top: 50px;
+  top: 40px;
 }
 
 .bottom-cloud {
   position: absolute;
-  left: 300px;
+  left: 250px;
   bottom: 300px;
 }
